@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"MediaLab.Assistant","l":"MediaLab.Assistant"},{"m":"MediaLab.Assistant","l":"Models"},{"m":"MediaLab.Assistant","l":"Services"},{"m":"MediaLab.Assistant","l":"Utils"}];updateSearchResults();

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragDetected="#initialize" onDragDone="#initialize" onDragDropped="#initialize" onDragEntered="#initialize" onDragExited="#initialize" onDragOver="#initialize" onMouseClicked="#unfocusSearchBar" onMouseDragEntered="#initialize" onMouseDragExited="#initialize" onMouseDragOver="#initialize" onMouseDragReleased="#initialize" prefHeight="585.0" prefWidth="842.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MediaLab.Assistant.NewCategoryController">
+   <children>
+      <VBox fx:id="leftVBox" alignment="TOP_CENTER" layoutX="568.0" layoutY="12.0" prefHeight="585.0" prefWidth="232.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox fx:id="logoVBox" alignment="CENTER" spacing="10.0">
+               <children>
+                  <ImageView fx:id="logoImage" fitHeight="77.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/assistant_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="logoLabel" text="MediaLab\nAssistant" textAlignment="CENTER" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox fx:id="sizedBox" prefHeight="200.0" prefWidth="100.0" />
+            <VBox fx:id="leftButtons" alignment="CENTER" spacing="40.0">
+               <children>
+                  <Button fx:id="dashboardButton" defaultButton="true" mnemonicParsing="false" onMouseClicked="#dashboardPressed" text="Dashboard">
+                     <graphic>
+                        <ImageView fx:id="home" fitHeight="20.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="taskButton" defaultButton="true" mnemonicParsing="false" onMouseClicked="#newTaskPressed" text="New Task">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/add-post.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="categoryButton" defaultButton="true" mnemonicParsing="false" text="New Category">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/add.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Button>
+                  <Button fx:id="priorityButton" defaultButton="true" mnemonicParsing="false" onMouseClicked="#newPriorityPressed" text="New Priority Level">
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/priority.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <padding>
+                        <Insets left="25.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <HBox fx:id="topHBox" alignment="CENTER_LEFT" layoutX="191.0" prefHeight="173.0" prefWidth="650.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox prefHeight="135.0" prefWidth="650.0">
+               <children>
+                  <HBox fx:id="firstHBox" alignment="CENTER" prefHeight="63.0" prefWidth="650.0">
+                     <children>
+                        <VBox fx:id="titleVBox" alignment="CENTER_LEFT" prefHeight="200.0">
+                           <children>
+                              <Label fx:id="pageTitleLabel" text="New Category" />
+                              <Label fx:id="localdateLabel" text="LocalDate" />
+                           </children>
+                        </VBox>
+                        <HBox fx:id="optionsHBox" alignment="CENTER_RIGHT">
+                           <children>
+                              <AnchorPane fx:id="searchBar" prefHeight="117.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField fx:id="searchField" layoutY="1.0" onMouseClicked="#showAutofill" prefHeight="34.0" prefWidth="200.0" promptText="Search for a task..." AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ImageView fx:id="searchIcon" fitHeight="34.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
+                                       <image>
+                                          <Image url="@../../Images/magnifying-glass.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane fx:id="notifAnchor" onMouseClicked="#seeNotifications">
+                                 <children>
+                                    <ImageView fx:id="notifButton" fitHeight="26.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@../../Images/notification.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fx:id="newNotif" fitHeight="11.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <image>
+                                          <Image url="@../../Images/circle.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="secondHBox" alignment="TOP_CENTER" prefHeight="65.0" prefWidth="650.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <AnchorPane fx:id="newTaskAnchor" layoutX="498.0" layoutY="329.0" prefHeight="466.0" prefWidth="619.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox fx:id="perimeterVBox" alignment="CENTER" layoutX="41.0" layoutY="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="perimeter" prefHeight="408.0" prefWidth="542.0">
+                     <children>
+                        <VBox fx:id="layout" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <TextField fx:id="titleField" promptText="Your new category's title." />
+                              <HBox fx:id="lowerOptions" prefHeight="247.0" prefWidth="471.0">
+                                 <children>
+                                    <TextArea fx:id="textArea" prefHeight="247.0" prefWidth="345.0" promptText="Provide a description for your new category." wrapText="true" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="save" mnemonicParsing="false" onMouseClicked="#save" text="Save" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

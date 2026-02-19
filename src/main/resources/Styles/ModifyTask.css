@@ -1,0 +1,247 @@
+.root{
+	-fx-background-color: #212931;
+}
+
+#leftVBox{
+	-fx-background-color: #151b23;
+}
+
+.label{
+	-fx-text-fill: #c9d4da;
+}
+
+.text{
+	-fx-fill: #c9d4da;
+}
+
+.button{
+	-fx-background-color: #151b23;
+	-fx-text-fill: #c9d4da;
+}
+
+#dashboardButton{
+	-fx-background-color: #5439e1;
+}
+
+#firstHBox{
+	-fx-background-color: #151b23;
+}
+
+#secondHBox{
+	-fx-background-color: #151b23;
+}
+
+.text-field{
+	-fx-background-color: #151b23;
+	-fx-background-radius: 100;
+	-fx-text-fill: #c9d4da;
+	-fx-prompt-text-fill: #7d878e;
+}
+
+.text-area{
+	-fx-text-fill: #c9d4da;
+	-fx-prompt-text-fill: #7d878e;
+	-fx-background-radius: 20;
+	-fx-background-color: #212931;
+	-fx-border-color: transparent;
+}
+
+.text-area .content{
+	-fx-background-color: #151b23;
+	-fx-display-caret:true;
+	-fx-background-radius: 20;
+	-fx-padding: 10;
+}
+
+.text-area .viewport {
+    -fx-background-color: transparent; /* Ensures inner viewport has no background */
+    -fx-background-radius: 20;
+}
+
+#searchField{
+	-fx-background-color: #c9d4da;
+	-fx-background-radius: 100;
+	-fx-text-fill: #151b23;
+	-fx-prompt-text-fill: #7d878e;
+}
+
+.context-menu {
+    -fx-background-color: #212931;
+    -fx-border-width: 0px;
+    -fx-background-radius: 8px;
+    -fx-border-radius: 8px;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0.5, 0, 2);
+}
+
+.menu-item {
+    -fx-text-fill: #c9d4da;
+    -fx-font-size: 16px;
+    -fx-padding: 8px 15px; /* Padding inside the menu item */
+}
+
+.menu-item:focused {
+    -fx-background-color: #212931;
+}
+
+.menu-item:hover {
+    -fx-background-color: #151b23;
+    -fx-background-radius: 10px;
+}
+
+.menu-item .separator .line {
+    -fx-border-color: #c9d4da; /* Change separator color */
+    -fx-border-width: 0 0 1px 0; /* Only bottom border */
+}
+
+#newNotifItem{
+	-fx-background-color: #212931;
+}
+
+#newNotifLabel, #oldNotifLabel:hover {
+    -fx-background-color: #151b23;
+}
+
+#newNotifItem:hover{
+	-fx-background-radius: 0px;
+}
+
+#oldNotifItem:hover {
+	-fx-background-color: #212931;
+}
+
+#oldNotifLabel, #oldNotifItem{
+	-fx-background-color: #151b23;
+}
+
+#deleteNotif {
+	-fx-background-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: #212931;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+    -fx-border-width: 0px;
+}
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.15em 0.0;
+}
+
+.scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :#151b23;
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+
+.combo-box {
+    -fx-background-color: #151b23;
+    -fx-border-color: #151b23;
+}
+
+.combo-box .text {
+    -fx-text-fill: #c9d4da; 
+    -fx-font-size: 14px;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #c9d4da;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #151b23;
+    -fx-text-fill: #c9d4da;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 8px 15px;
+    -fx-effect: null;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #212931;
+    -fx-border-color: transparent; /* Ensure no border on hover */
+    -fx-border-width: 0; /* Explicitly set border width to 0 */
+    -fx-effect: null;
+}
+
+/* Style the entire DatePicker */
+.date-picker {
+    -fx-background-color: #151b23;
+    -fx-padding: 5px;
+}
+
+/* Style the text field inside DatePicker */
+.date-picker .text-field {
+    -fx-background-color: #151b23;
+    -fx-text-fill: #c9d4da;
+    -fx-font-size: 14px;
+}
+
+/* Style the button inside DatePicker */
+.date-picker .arrow-button {
+    -fx-background-color: #151b23;
+}
+.date-picker .arrow-button .arrow {
+	-fx-scale-x: 1.5;
+    -fx-scale-y: 1.5;
+    -fx-background-color: #c9d4da; /* Change color of the icon */
+}
+
+/* Style the calendar popup */
+.date-picker-popup {
+    -fx-background-color: #151b23;
+    -fx-border-color: #151b23;
+    -fx-border-radius: 5px;
+}
+
+.date-picker-popup .month-year-pane {
+    -fx-background-color: #151b23;
+    -fx-text-fill: #c9d4da;
+}
+
+/* Style the calendar cells (days) */
+.date-picker .cell {
+    -fx-background-color: #151b23;
+    -fx-text-fill: #c9d4da;
+}
+
+.date-picker .cell:hover {
+    -fx-background-color: #212931;
+}
+
+/* Style the selected date */
+.date-picker .selected {
+    -fx-background-color: #5439e1;
+}
+
+#pickNotifications{
+	-fx-background-color: #151b23;
+}

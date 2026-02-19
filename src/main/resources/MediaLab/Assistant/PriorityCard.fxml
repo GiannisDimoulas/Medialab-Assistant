@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="card" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="90.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MediaLab.Assistant.PriorityCardController">
+   <children>
+      <AnchorPane fx:id="firstHalf" prefHeight="44.0" prefWidth="600.0">
+         <children>
+            <HBox fx:id="padding" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox fx:id="info" alignment="CENTER_LEFT" onMouseClicked="#modifyPriority" prefHeight="44.0" prefWidth="567.0">
+                     <children>
+                        <Spinner fx:id="level" prefHeight="26.0" prefWidth="50.0" />
+                        <VBox fx:id="labels" alignment="CENTER_LEFT" prefHeight="44.0" prefWidth="251.0">
+                           <children>
+                              <HBox fx:id="titlePadding">
+                                 <children>
+                                    <Label fx:id="title" text="Label" />
+                                 </children>
+                              </HBox>
+                              <ComboBox fx:id="taskList" onAction="#goToTask" prefHeight="26.0" prefWidth="239.0" promptText="Click here to view this priority's tasks" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <ImageView fx:id="options" fitHeight="40.0" fitWidth="36.0" onMouseClicked="#showPopupMenu" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/option.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="secondHalf" layoutY="45.0" prefHeight="44.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox fx:id="descPadding" onMouseClicked="#modifyPriority" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label fx:id="description" text="Label" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

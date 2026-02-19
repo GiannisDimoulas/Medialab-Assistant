@@ -1,0 +1,58 @@
+#card{
+	-fx-background-color: #151b23;
+	-fx-background-radius: 15;
+}
+
+.combo-box {
+    -fx-background-color: #151b23;
+    -fx-border-color: #151b23;
+}
+
+.combo-box .text {
+    -fx-text-fill: #c9d4da; 
+    -fx-font-size: 14px;
+}
+
+.combo-box .arrow {
+    -fx-background-color: #c9d4da;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #151b23;
+    -fx-text-fill: #c9d4da;
+    fx-prompt-text-fill: #c9d4da;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 8px 15px;
+    -fx-effect: null;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #212931;
+    -fx-border-color: transparent; /* Ensure no border on hover */
+    -fx-border-width: 0; /* Explicitly set border width to 0 */
+    -fx-effect: null;
+}
+
+.spinner{
+	-fx-background-color: #212931;
+}
+
+.spinner .text-field {
+    -fx-text-fill: #c9d4da;
+    -fx-background-color: #212931;
+    -fx-border-color: #c9d4da;
+    -fx-border-radius: 3px;
+}
+
+.spinner .increment-arrow-button,
+.spinner .decrement-arrow-button {
+    -fx-background-color: #212931;
+    -fx-background-radius: 3px;
+    -fx-border-color: #c9d4da;
+}
+
+.spinner .increment-arrow-button .increment-arrow,
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: #c9d4da;
+}
