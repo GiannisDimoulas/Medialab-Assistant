@@ -1,5 +1,5 @@
 # Medialab-Assistant
-**MediaLab Assistant** is a desktop task management application built with **JavaFX** and **Maven**. It enables users to create, organize, and monitor their tasks by grouping them into fully customizable categories, designating them into different priority levels, and assigning the appropriate deadlines and reminders; all through an interactive graphical interface. It supports full task lifecycle management (creation, modification, deletion, and status tracking), advanced search functionality, notification history, and persistent local storage achieved through the usage of JSON files that ensures data consistency across sessions.
+**MediaLab Assistant** is a desktop task management application built with **JavaFX** and **Maven**. It enables users to create, organize, and monitor their tasks by grouping them into fully customizable categories, designating them into different priority levels, and assigning the appropriate deadlines and reminders; all through an interactive graphical interface. It supports full task lifecycle management (creation, modification, deletion, and status tracking), advanced search functionality, notification history, and persistent local storage achieved through the usage of JSON files that ensure data consistency across sessions.
 
 This project was developed as part of the "Multimedia Technology" course at the School of Electrical and Computer Engineering (ECE) at the National Technical University of Athens (NTUA). For more information about the assignment's requirements, as well as the final report on the project, please refer to the [documentation](documentation/). Details are provided both in greek and in english.
 
@@ -15,7 +15,7 @@ git clone https://github.com/GiannisDimoulas/Medialab-Assistant.git
 cd Medialab-Assistant
 ```
 
-Below, I provide two methods you can run and test the project.
+Below, I provide two methods you can use to run and test the project.
 ### 1. Maven CLI (recommended)
 ```
 rm ./src/main/java/module-info.java
